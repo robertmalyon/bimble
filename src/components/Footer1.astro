@@ -75,19 +75,7 @@ const today = new Date();
     justify-content: center;
     gap: clamp(1.75rem, 4vw, 2.5rem);
   }
-  .footer__list :global(a) {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5;
-    text-decoration: none;
-    color: var(--text-white, #fafbfc);
-    transition: color 0.3s;
-  }
-  .footer__list :global(a):hover {
-    color: var(--link-hover, red);
-  }
-  .footer__list :global(a).nav-content-active-link {
-    color: var(--active-link, red);
-  }
+
   .footer__logo-link {
     width: 10.5rem;
     display: block;
@@ -123,9 +111,6 @@ const today = new Date();
     color: var(--text-white-muted, #fafbfc);
     text-decoration: none;
     transition: color 0.3s;
-  }
-  .footer__link:hover {
-    color: var(--link-hover, red);
   }
 
   /* Adjustments for larger screens */
