@@ -1,0 +1,120 @@
+/* For icons, use Material Design Icons (or Gitlab SVGs) */
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: "Inter", sans-serif;
+	background: white;
+	background-attachment: fixed;
+	background-image: url("");
+	color: var(--bodyTextColor);
+}
+.rm-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--page-padding);
+    
+  }
+  
+  .rm-wrapper > * {
+    --layout-spacing: max(8vh, 3rem);
+    width: min(100%, var(--container-max));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rm-container {
+    width: min(100%, var(--container-max));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rm-section {
+    padding: var(--section-padding);
+  }
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-display: optional;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2");
+  }
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-topper.topper-wrapper {
+  background-color: var(--brand-color-red);
+  padding: .5rem 1rem .5rem 0;
+  border-radius: 0 99rem 99rem 0;
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.cs-topper.topper-wrapper:before {
+  content: '';
+  width: 10rem;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 100%;
+  background-color: inherit;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: inherit;
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+.cd-sr-only {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+			clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+  }
+
+  .project-content p {
+    margin-bottom: 1rem;
+  }
+
+  
