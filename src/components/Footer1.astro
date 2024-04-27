@@ -11,9 +11,11 @@ const today = new Date();
     <div class="footer__bottom">
       <!--Footer1Socials component here-->
       <span class="footer__copyright"
-        >© Copyright {today.getFullYear()} - <a
-          href=""
-          class="footer__link--brand">Lovingly created by Robert Malyon.</a
+        >© Copyright {today.getFullYear()} - <span class="footer__link--brand"
+          >Lovingly created in about two hours by Robert Malyon. Made with HTML,
+          CSS, <a href="https://astro.build/">Astro JS</a> and images from <a
+            href="https://unsplash.com/">Unsplash</a
+          ></span
         >
       </span>
     </div>
@@ -104,7 +106,7 @@ const today = new Date();
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--overlay-dark-color, rgba(26, 26, 26, 0.9));
+    background: var(--overlay-dark-color, rgba(8, 19, 15, 0.9));
     z-index: 1;
   }
   .footer__background img {
