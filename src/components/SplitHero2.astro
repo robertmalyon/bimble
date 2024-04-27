@@ -54,6 +54,7 @@
     flex-direction: column;
     justify-content: center;
     padding: var(--page-padding) 0;
+    padding-bottom: var(--space-3xl);
   }
   .hero-wrapper {
     position: relative;
@@ -76,8 +77,6 @@
 
     display: grid;
     grid-gap: var(--gap);
-    /* min() with 100% prevents overflow
-  in extra narrow spaces */
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
   }
   .image {
