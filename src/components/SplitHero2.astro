@@ -30,10 +30,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
       <div class="content cta">
         <h1 class="heading">Backstory</h1>
         <p class="story">
@@ -47,127 +43,124 @@
         </p>
       </div>
     </div>
-
-    <style>
-      .header-wrapper {
-        background-color: #e2dbbe;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: var(--page-padding) 0;
-      }
-      .hero-wrapper {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0 var(--page-padding);
-        padding-top: 1rem;
-      }
-      .container {
-        width: min(100%, var(--container-max));
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .hero {
-        --min: 40ch;
-        --gap: 1rem;
-
-        display: grid;
-        grid-gap: var(--gap);
-        /* min() with 100% prevents overflow
-  in extra narrow spaces */
-        grid-template-columns: repeat(
-          auto-fit,
-          minmax(min(100%, var(--min)), 1fr)
-        );
-      }
-      .image {
-        width: 100%;
-        position: relative;
-      }
-      .hero-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 1rem;
-      }
-      .content {
-        width: 100%;
-        height: 100%;
-        min-height: 30rem;
-        position: relative;
-        background-color: var(--russet);
-        color: var(--font-color-light);
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        border-radius: 1rem;
-        padding: 3rem;
-      }
-      .heading {
-        font-size: var(--step-2);
-        font-weight: 700;
-      }
-      .cta {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-        background-color: #29371c;
-      }
-      .header {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5rem;
-      }
-      .tagline {
-        font-weight: 700;
-        font-size: var(--step-5);
-      }
-
-      .definition {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        font-size: 1.5rem;
-        line-height: 1.5;
-      }
-      .pronounce {
-        font-weight: 700;
-        font-size: 2rem;
-      }
-      .pill {
-        background-color: var(--font-color-light);
-        color: var(--russet);
-        padding: 0.5rem 1rem;
-        border-radius: 1rem;
-        font-weight: 700;
-        font-size: 1rem;
-        display: flex;
-        width: fit-content;
-      }
-      .identifier {
-        font-weight: 700;
-      }
-      span i {
-        font-style: italic;
-      }
-      .example {
-        margin-left: 1rem;
-      }
-      .define {
-        font-weight: 700;
-        margin-left: 1rem;
-      }
-      .story {
-        font-size: 1.5rem;
-        line-height: 1.5;
-      }
-    </style>
   </section>
 </div>
+
+<style>
+  .header-wrapper {
+    background-color: #e2dbbe;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--page-padding) 0;
+  }
+  .hero-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 var(--page-padding);
+    padding-top: 1rem;
+  }
+  .container {
+    width: min(100%, var(--container-max));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    --min: 40ch;
+    --gap: 1rem;
+
+    display: grid;
+    grid-gap: var(--gap);
+    /* min() with 100% prevents overflow
+  in extra narrow spaces */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+  }
+  .image {
+    width: 100%;
+    position: relative;
+  }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    min-height: 30rem;
+    position: relative;
+    background-color: var(--russet);
+    color: var(--font-color-light);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+  .heading {
+    font-size: var(--step-2);
+    font-weight: 700;
+  }
+  .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: #29371c;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .tagline {
+    font-weight: 700;
+    font-size: var(--step-5);
+  }
+
+  .definition {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .pronounce {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .pill {
+    background-color: var(--font-color-light);
+    color: var(--russet);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    width: fit-content;
+  }
+  .identifier {
+    font-weight: 700;
+  }
+  span i {
+    font-style: italic;
+  }
+  .example {
+    margin-left: 1rem;
+  }
+  .define {
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+  .story {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+</style>
